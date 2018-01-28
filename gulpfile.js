@@ -11,6 +11,7 @@ gulp.task('css:clean', function() {
 gulp.task('css:compile', ['css:clean'], function() {
 	return gulp.src('src/scss/*.scss')
 			.pipe(sass())
+			.on('error',console.log.bind(console))
 			.pipe(gulp.dest('dist/css'));
 });
 
