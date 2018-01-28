@@ -1,6 +1,6 @@
 const gulp = require('gulp'),
-      sass = require('gulp-sass'),
-      del  = require('del');
+	  sass = require('gulp-sass'),
+	  del  = require('del');
 
 // Delete all CSS files
 gulp.task('css:clean', function() {
