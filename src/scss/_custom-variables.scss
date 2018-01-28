@@ -7,7 +7,7 @@
 //
 
 // stylelint-disable
-// $white:    #fff;
+$white:    #fff;
 // $gray-100: #f8f9fa;
 // $gray-200: #e9ecef;
 // $gray-300: #dee2e6;
@@ -16,7 +16,7 @@
 // $gray-600: #868e96;
 // $gray-700: #495057;
 // $gray-800: #343a40;
-// $gray-900: #212529;
+$gray-900: #444;
 // $black:    #000;
 
 // $grays: ();
@@ -39,7 +39,7 @@
 // $red:     #dc3545;
 // $orange:  #fd7e14;
 // $yellow:  #ffc107;
-// $green:   #28a745;
+$green:   #54bd8f;
 // $teal:    #20c997;
 // $cyan:    #17a2b8;
 
@@ -60,7 +60,7 @@
 //   "gray-dark":  $gray-800
 // ), $colors);
 
-// $primary:       $blue;
+$primary:       $green;
 // $secondary:     $gray-600;
 // $success:       $green;
 // $info:          $cyan;
@@ -129,7 +129,7 @@
 // Settings for the `<body>` element.
 
 // $body-bg:                   $white;
-// $body-color:                $gray-900;
+$body-color:                $gray-900;
 
 // Links
 //
@@ -535,8 +535,8 @@ $link-decoration: $link-decoration;
 
 // Navbar
 
-// $navbar-padding-y:                  ($spacer / 2);
-// $navbar-padding-x:                  $spacer;
+$navbar-padding-y:                  0;
+$navbar-padding-x:                  0;
 
 // $navbar-brand-font-size:            $font-size-lg;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
@@ -549,8 +549,8 @@ $link-decoration: $link-decoration;
 // $navbar-toggler-font-size:          $font-size-lg;
 // $navbar-toggler-border-radius:      $btn-border-radius;
 
-// $navbar-dark-color:                 rgba($white,.5);
-// $navbar-dark-hover-color:           rgba($white,.75);
+$navbar-dark-color:                    $white;
+$navbar-dark-hover-color:              $body-color;
 // $navbar-dark-active-color:          $white;
 // $navbar-dark-disabled-color:        rgba($white,.25);
 // $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
