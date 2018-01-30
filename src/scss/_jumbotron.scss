@@ -12,5 +12,10 @@
 
     a {
         text-shadow: 0 0 4px rgba(100,100,100,.4);
+        transition: 300ms;
+
+        &:hover {
+            color: #fff;
+        }
     }
 }
