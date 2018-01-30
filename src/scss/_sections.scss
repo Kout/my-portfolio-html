@@ -21,7 +21,7 @@ section {
         @include media-breakpoint-up(lg) {
             padding-top: $cutout-size/2; // space for cutout
 
-            &:before {
+            &::before {
                 content: ''; // to make pseudoelement live
                 display: block;
                 position: absolute;
