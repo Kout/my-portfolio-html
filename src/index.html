@@ -307,7 +307,7 @@
 
         $('.progress-bar').on('appear', function() {
             var progressValue = $(this).data('progress'); // get progress value from custom data- attribute
-            $(this).animate({width: progressValue}, 1000); // animate progress bar’s width to the value from data-progress atribute
+            $(this).delay(300).animate({width: progressValue}, 1000); // animate progress bar’s width to the value from data-progress atribute
         });
     </script>
 </body>
