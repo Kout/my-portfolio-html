@@ -1,0 +1,32 @@
+.mp-promo {
+    $cutout-size: 140px; // size of the pseudoelement block
+
+    @include media-breakpoint-up(lg) { // using Bootstrap breakpoints (kinda variable for breakpoint)
+        margin-top: $cutout-size/4; // prevent pseudoelement from covering the above text
+    }
+
+    article {
+        position: relative;
+        padding-top: map-get($spacers,5); // equal to .pt-5 class
+
+        @include media-breakpoint-up(lg) {
+            padding-top: $cutout-size/2; // space for cutout
+
+            &::before {
+                content: ''; // to make pseudoelement live
+                display: block;
+                position: absolute;
+                top: -$cutout-size/2;
+                // Trick for horizontal centering of absolutely positioned element (margin: auto doesn’t work here)
+                // Try comment out the line with transform, and you should see no change on the page.
+                left: 50%; // Shift the element to the center of its parent…
+                margin-left: -70px; // …as we know the element’s size, shift it back half its size…
+                // transform: translateX(-50%); // …but when we don’t, we must use tranform.
+                width: $cutout-size;
+                height: $cutout-size;
+                background-color: #d6d6d6; // same as the upper section, so they blend together
+                border-radius: 0 0 50% 50%; // In fact border-radius: 50%; would be also fine here.
+            }
+        }
+    }
+}
