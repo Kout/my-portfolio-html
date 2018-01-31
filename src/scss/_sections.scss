@@ -26,7 +26,7 @@ section {
 .mp-promo {
     $cutout-size: 140px; // size of the pseudoelement block
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(lg) { // using Bootstrap breakpoints (kinda variable for breakpoint)
         margin-top: $cutout-size/4; // prevent pseudoelement from covering the above text
     }
 
